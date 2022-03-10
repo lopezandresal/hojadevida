@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/normalize.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>HOJA DE VIDA </title>
+</head>
+<body>
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Andrés López</a>
+                <!-- MENÚ DE OPCIONES -->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home nav__icon'></i>Principal
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#profile" class="nav__link">
+                            <i class='bx bxs-user nav__icon'></i>Perfil
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">
+                            <i class='bx bx-book nav__icon'></i>Educación
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-receipt nav__icon'></i>Habilidades
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">
+                            <i class='bx bx-briefcase-alt nav__icon'></i>Experiencia
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#certificates" class="nav__link">
+                            <i class='bx bx-award nav__icon'></i>Certificados
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#references" class="nav__link">
+                            <i class='bx bx-link-external nav__icon'></i>Referencias
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+    </header>
+    <main class="l-main bd-container">
+        <div class="resume" id="area-cv">
+            <div class="resume__left">
+                <section class="home" id="home">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img src="img/image.jpeg" alt="" class="home__img">
+
+                            <h1 class="home__title">ANDRÉS <b>LÓPEZ</b></h1>
+                            <h3 class="home__profession">Web developer</h3>
+
+                            <div>
+                            <a download=""  href="pdf/resumeHV.pdf" class="home__button-movil" onclick="generateResume()">Descargar</a>
+                            </div>
+                        </div> 
+                        <!-- INFORMACION PERSONAL -->
+                        <div class="home__address bd-grid">
+                            <span class="home__information">
+                                <i class='bx bx-map home__icon'></i>Cl. 112 #42-19 Alameda del río <br> Conjunto Torcaza, apto 402
+                            </span>
+                            <span class="home__information">
+                                <i class='bx bx-envelope home__icon'></i>Andresklk16@gmail.com
+                            </span>
+                            <span class="home__information">
+                                <i class='bx bx-phone home__icon'></i>+57 301-224-6199
+                            </span>
+                        </div>
+                    </div>
+                    <!-- CAMBIAR TEMA -->
+                    <i class="bx bx-moon change-theme" title="Tema" id="theme-button"></i>
+                    <!-- BOTON PARA GENERAR Y DESCARGAR EL PDF -->
+                    <i class="bx bx-download generate-pdf" title="Generar PDF" id="resume-button"></i>
+                </section>
+                
+                    <!-- REDES SOCIALES -->
+                <section class="social section">
+                    <h2 class="section-title">SOCIAL</h2>
+                    <div class="social__container bd-grid">
+                        <a href="https://www.facebook.com/" target="_blank" class="social__link">
+                            <i class='bx bxl-facebook social__icon'></i> @andreslopezponton
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="social__link">
+                            <i class='bx bxl-instagram social__icon'></i> @andresalp_
+                        </a>
+                    </div>
+                </section>
+                    <!-- SOBRE MÍ -->
+                <section class="profile section" id="profile">
+                    <h2 class="section-title">Perfil</h2>
+
+                    <p class="profile__description">Me considero una persona seria, creativa, dinámica, responsable, con capacidad de liderazgo, dispuesto a trabajar en equipo colaborativo, para retroalimentar mi aprendizaje y aplicar mis conocimientos que he adquirido en el SENA y en la Universidad. Me considero hábil en el campo de mantenimiento preventivo de equipos de cómputo, tengo conocimiento de los lenguajes Java, C++, MySQL, HTML, PHP, Javascript, CSS, Python y además sé un poco de inglés. Estoy dispuesto a colaborar en la solución de problemas, para de esta manera alcanzar los propósitos y las metas trazadas por la empresa, que me permita adquirir experiencia y desarrollarme personal y laboralmente.</p>
+                </section>
+                    <!-- EDUCACION O ESTUDIOS -->
+                <section class="educacion section" id="education">
+                    <h2 class="section-title">Educación</h2>
+
+                    <div class="education__container bd-grid">
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+
+                            <div class="education__data bd-grid"> 
+                                <h3 class="education__title">TÉCNICO EN SISTEMAS</h3>
+                                <span class="education__studies">SENA</span>
+                                <span class="education__year">2018 - 2019</span>
+                            </div>
+                        </div>
+
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <!-- <span class="education__line"></span> -->
+                            </div>
+                            <div class="education__data bd-grid"> 
+                                <h3 class="education__title">INGENIERÍA DE SISTEMAS</h3>
+                                <span class="education__studies">Corporacion Universitaria Americana</span>
+                                <span class="education__year">2019 - actualmente</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- HABILIDADES -->
+                <section class="skills section" id="skills">
+                    <h2 class="section-title">Habilidades</h2>
+
+                    <div class="skills__content bd-grid">
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> HTML
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> CSS
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> JavaScript
+                            </li>
+                        </ul>
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> Java
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> MySQL
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> JavaScript
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div class="resume__right">
+                <!-- EXPERIENCIA -->
+                <section class="experience section" id="experience">
+                    <h2 class="section-title">Experiencia</h2>
+                    <div class="experience__container bd-grid">
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">COMPAÑÍA XYZ</h3>
+                                <span class="experience__company">Desde 2021 hasta 2022 | cargo</span>
+                                <p class="experience__description">descripcion de lo que hacías</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- CERTIFICADOS -->
+                <section class="certificate section" id="certificates">
+                    <h2 class="section-title">Certificados</h2>
+
+                    <div class="certificates__container bd-grid">
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">CERTIFICADO SENA </h3>
+                            <p class="certificate__description">Lorem ipsum dolor sit amet 
+                                consectetur adipisicing elit. Eius id illo quasi dicta 
+                                minus excepturi, velit accusantium placeat ea distinctio 
+                                incidunt alias repudiandae sit facere recusandae aliquid 
+                                accusamus animi necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis natus voluptate quam ut consectetur modi, nihil reprehenderit, corporis adipisci ipsam non distinctio aliquid minima voluptatum in ipsum labore maxime molestiae.</p>
+                        </div>
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">CERTIFICADO CUA </h3>
+                            <p class="certificate__description">Lorem2 ipsum dolor sit amet consectetur adipisicing elit. 
+                                Eius id illo quasi dicta minus excepturi, velit accusantium 
+                                placeat ea distinctio incidunt alias repudiandae sit facere 
+                                recusandae aliquid accusamus animi necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora enim fuga cupiditate animi inventore ducimus porro eligendi temporibus consectetur, architecto ab, sed molestias repellat nisi incidunt vero facere. Eaque, nam.</p>
+                        </div>
+                    </div>
+                </section>
+                <!-- REFERENCIAS -->
+                <section class="references section" id="references">
+                    <h2 class="section-title">Referencias</h2>
+
+                    <div class="references__container bd-grid">
+                        <div class="references__content bd-grid">
+                            <span class="references__subtitle">Profesor</span>
+                            <h3 class="references__title">Mr. tewolkinded</h3>
+                            <ul class="references__contect">
+                                <li>Teléfono: 329-493-9932</li>
+                                <li>Email: Sujetodeprueba@fortnite.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!-- LENGUAJES -->
+                <section class="languages section">
+                    <h2 class="section-title">Lenguajes</h2>
+                    <div class="languages__container">
+                        <ul class="languages__content bd-grid">
+                            <li class="languages__name">
+                                <span class="languages__circle"></span> Español
+                            </li>
+                            <li class="languages__name">
+                                <span class="languages__circle"></span> Inglés
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- INTERESES -->
+                <section class="interests section">
+                    <h2 class="section-title">Intereses</h2>
+                    <div class="interests__container bd-grid">
+                        <div class="interests__content">
+                            <i class="bx bx-headphone interests__icon"></i>
+                            <span class="interests__name">Música</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class="bx bx-game interests__icon"></i>
+                            <span class="interests__name">Videojuegos</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class="bx bxs-plane-alt interests__icon"></i>
+                            <span class="interests__name">Viajar</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class="bx bx-book interests__icon"></i>
+                            <span class="interests__name">Leer</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <!-- AQUI SE MUESTRA EL SCROLL HACIA ARRIBA CUANDO SE VA BAJANDO -->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+    </a>
+
+    <script src="./js/html2pdf.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
